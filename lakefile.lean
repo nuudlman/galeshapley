@@ -8,8 +8,9 @@ package «galeShapley» where
   ]
   -- add any additional package configuration options here
 
+  -- TODO: Swap to stable version of mathlib once a version for 4.12 is tagged
 require mathlib from git
-  "https://github.com/leanprover-community/mathlib4.git"
+  "https://github.com/leanprover-community/mathlib4.git" -- @ s!"v{Lean.versionString}"
 
 @[default_target]
 lean_lib «GaleShapley» where
